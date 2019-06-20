@@ -11,6 +11,7 @@ const IconSection = (props) => {
       <style jsx>{`
           .icon-section {
             background: rgb(244,244,244);
+            padding: 6rem 0;
           }
         `}
       </style>

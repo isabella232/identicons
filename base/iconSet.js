@@ -15,14 +15,6 @@ const iconSet = {
     },
     name: "API Extend"
   },
-  icon3: {
-    color: "color",
-    images: {
-      svg: "../static/icons/color/icon-api-related.svg",
-      png: "../static/icons/color/icon-api-related.png",
-    },
-    name: "API Related"
-  },
   icon4: {
     color: "color",
     images: {
@@ -30,6 +22,14 @@ const iconSet = {
       png: "../static/icons/color/icon-api.png",
     },
     name: "API"
+  },
+  icon3: {
+    color: "color",
+    images: {
+      svg: "../static/icons/color/icon-api-related.svg",
+      png: "../static/icons/color/icon-api-related.png",
+    },
+    name: "API Related"
   },
   icon5: {
     color: "color",
@@ -94,6 +94,14 @@ const iconSet = {
       png: "../static/icons/color/icon-browser.png",
     },
     name: "Browser"
+  },
+  icon30: {
+    color: "color",
+    images: {
+      svg: "../static/icons/color/icon-spa.svg",
+      png: "../static/icons/color/icon-spa.png",
+    },
+    name: "SPA"
   },
   icon12: {
     color: "color",
@@ -222,6 +230,14 @@ const iconSet = {
       png: "../static/icons/color/icon-web-app.png",
     },
     name: "Web App"
+  },
+  icon29: {
+    color: "color",
+    images: {
+      svg: "../static/icons/color/icon-cookie.svg",
+      png: "../static/icons/color/icon-cookie.png",
+    },
+    name: "Cookie"
   },
 };
 
