@@ -1,22 +1,44 @@
+import React, { Component } from "react";
+import Slider from "react-slick";
 import Container from './Container';
 
-const Samples = () => {
+class Samples extends Component {
 
-  return (
-    <div className="samples-section">
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    };
+    
+    return (
       <Container>
-        Samples
+        <p> Single Item</p>
+        <Slider {...settings}>
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+        </Slider>
       </Container>
-
-      <style jsx>{`
-          .samples-section {
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
-            background: rgb(244,244,244);
-          }
-        `}
-      </style>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Samples;

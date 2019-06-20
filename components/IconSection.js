@@ -1,11 +1,11 @@
 import Container from './Container';
 import IconGrid from './IconGrid';
 
-const IconSection = () => {
+const IconSection = (props) => {
   return (
     <section className="icon-section">
       <Container>
-        <IconGrid />
+        <IconGrid icons={props.icons} setCurrentIcon={props.setCurrentIcon}/>
       </Container>
 
       <style jsx>{`

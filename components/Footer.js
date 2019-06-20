@@ -1,6 +1,6 @@
-import React from 'react';
+import Link from "next/link";
 import Container from './Container'
-import Link from 'next/Link';
+
 
 const Footer = () => {
   return (
@@ -9,8 +9,7 @@ const Footer = () => {
         <div className="footer-logo">
           <img className="identicons-logo" src="../static/identicons-logo.svg" width="100"></img>
           <span className="footer-copy"><strong>open source</strong></span>
-          <Link>
-
+          <Link href="http://auth0.com">
             <img className="auth0-logo" src="../static/auth0-white-logo.svg" width="60"></img>
           </Link>
         </div>
