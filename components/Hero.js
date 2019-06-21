@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="hero">
       <Container>
         <h1 className="hero-title">A visual language for identity</h1>
-        <p className="hero-copy">Auth0 is releasing a set of royalty-free, free-to-use icons and clipart representing fundamental identity concepts and artifacts frequently used to describe topologies and solutions in presentations, specifications and documentation. For more information visit our <a href="#" target="_blank">blog post</a>.</p>
+        <p className="hero-copy">Royalty-free, free-to-use icons and clipart representing fundamental identity concepts. Use them in presentations, specifications and documentation. <br />For more details <a href="#" target="_blank">read more</a>.</p>
         <div className="call-to-action">
           <a className="btn btn-transparent btn-lg" href="../static/icons/identicons-set.zip" download>⬇ Download Set</a>
           <a className="btn btn-transparent btn-lg" href="https://github.com/auth0/identicons/pull/new/master" > 
@@ -23,14 +23,14 @@ const Hero = () => {
         }
         
         .hero-title {
-          padding-top: 7rem;
+          padding-top: 4rem;
           font-size: 4.8rem;
           max-width: 75rem;
           margin: 4rem auto;
         }
 
         .call-to-action {
-          margin: 0px auto  11.8rem;
+          margin: 0px auto  10rem;
         }
 
         .call-to-action a:last-child {

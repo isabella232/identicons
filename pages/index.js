@@ -4,6 +4,7 @@ import IconSection from "../components/IconSection";
 import SamplesSection from "../components/SamplesSection";
 import IconBox from "../components/IconBox";
 import iconSet from '../base/iconSet';
+import Modal from '../components/Modal'
 
 
 class Index extends React.Component {
@@ -32,6 +33,7 @@ class Index extends React.Component {
         <IconSection icons={iconSet} setCurrentIcon={this.setCurrentIcon}/>
         <SamplesSection />
         <IconBox  IconBoxActive={this.state.IconBoxActive} iconSet={iconSet} currentIcon={this.state.currentIcon} closeIconBox={this.closeIconBox}/>
+        
       </div>
     )
   }
