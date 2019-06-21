@@ -5,13 +5,8 @@ const HeaderNav = () => {
     <nav className="header-nav">
       <ul className="navigation">
         <li>
-          <Link href="/usage" >
-            <a>Usage</a>
-          </Link>
-        </li>
-        <li>
           <Link href="https://github.com/auth0/identicons" >
-            <a target="_blank">Github</a>
+            <a target="_blank">Usage</a>
           </Link>
         </li>
       </ul>
