@@ -286,7 +286,7 @@ const iconSet = {
         png: "../static/icons/dark/icon-refresh-token.png",
       }
     },
-    name: "Tefresh Token"
+    name: "Refresh Token"
   },
   icon24: {
     images: {
