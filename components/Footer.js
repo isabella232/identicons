@@ -7,10 +7,10 @@ const Footer = () => {
     <footer className="footer-page">
       <Container>
         <div className="footer-logo">
-          <img className="identicons-logo" src="../static/identicons-logo.svg" width="100"></img>
+          <img className="identicons-logo" src="../static/site/identicons-logo.svg" width="100"></img>
           <span className="footer-copy"><strong>open source</strong></span>
           <Link href="http://auth0.com">
-            <img className="auth0-logo" src="../static/auth0-white-logo.svg" width="60"></img>
+            <img className="auth0-logo" src="../static/site/auth0-white-logo.svg" width="60"></img>
           </Link>
         </div>
       </Container>

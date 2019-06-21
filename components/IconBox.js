@@ -5,16 +5,19 @@ const IconBox = (props) => {
 
   return (
     <div className={props.IconBoxActive ? "icon-box" : "hide icon-box"}>
-      <img className="icon" src={icon ? icon.images.svg : ''} alt={icon ? icon.name:''} width='80px'/>
+      <img className="icon" src={icon ? icon.images.light.svg : ''} alt={icon ? icon.name:''} width='80px'/>
       <div className="icon-description">
         <p className="icon-name">{icon ? icon.name : ""}</p>
         <p className="icon-size">400x400</p>
       </div>
       <div className="icon-download">
-        <a href={icon ? icon.images.png : ''} download>PNG</a>
-        <a href={icon ? icon.images.svg : ''} download>SVG</a>
+        <p className="download-copy">DOWNLOAD</p>
+        <a href={icon ? icon.images.light.png : ''} download>PNG</a>
+        <a href={icon ? icon.images.light.svg : ''} download>SVG</a>
       </div>
-      <div className="close-box" onClick={() => props.closeIconBox()}>X</div>
+      <div className="close-box" onClick={() => props.closeIconBox()}>
+        <img src="../static/site/icon-close.svg" alt="Close" width="12"/>
+      </div>
       <style jsx>{`
           .icon-box {
             display: flex;
@@ -44,10 +47,12 @@ const IconBox = (props) => {
             text-transform: uppercase;
             font-weight: 600;
             margin: 0 0 5px;
+            opacity: 0.8;
           }
 
           .icon-size {
             opacity: 0.4;
+            margin: 0;
           }
 
           .icon-download {
@@ -55,18 +60,30 @@ const IconBox = (props) => {
             order: 3;
           }
 
+          .download-copy {
+            display: inline-block;
+            margin:0 25px 0 0;
+            opacity: 0.4;
+            font-size: 1.2rem;
+          }
+
           .icon-download a {
-            padding: 0 10px 0 0;
+            margin: 0 10px 0 0;
+            padding: 5px 10px;
+            background: rgb(244,244,244);
+            border-radius: 3px;
+            color: #4A4A4A;
           }
 
           .icon-download a:last-child {
-            padding: 0 25px 0 0;
+            margin: 0 20px 0 0;
           }
 
           .close-box {
             cursor: pointer;
             align-self: flex-start;
             order: 4;
+            margin-top: -8px;
           }
 
           .hide {

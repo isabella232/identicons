@@ -9,6 +9,11 @@ const HeaderNav = () => {
             <a>Usage</a>
           </Link>
         </li>
+        <li>
+          <Link href="https://github.com/auth0/identicons" >
+            <a target="_blank">Github</a>
+          </Link>
+        </li>
       </ul>
       <style jsx>{`
           .header-nav {
@@ -24,6 +29,8 @@ const HeaderNav = () => {
             margin: 0;
             padding:0;
             list-style: none;
+            display: inline-block;
+            margin-left: 25px;
           }
 
           .navigation li a{

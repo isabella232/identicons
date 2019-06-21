@@ -8,7 +8,7 @@ const Header = () => {
       <Container>
         <Link href="/index" >
           <div className="logo">
-            <img className="sc-footer__logo-image" src="../static/auth0-logo-black.svg" width="30"></img>
+            <img className="sc-footer__logo-image" src="../static/site/auth0-logo-black.svg" width="30"></img>
             <span className="logo-copy"><strong>IDENTICONS</strong></span>
           </div>
         </Link>
@@ -20,7 +20,7 @@ const Header = () => {
           background: white;
           color: rgb(34, 34, 34);
           width: 100%;
-          padding: 20px 0 ;
+          padding: 20px 0;
         }
 
         .logo {

@@ -1,241 +1,381 @@
 const iconSet = {
   icon1: {
-    color: "color",
     images: {
-      svg: "../static/icons/color/icon-access-token.svg",
-      png: "../static/icons/color/icon-access-token.png",
+      light: {
+        svg: "../static/icons/light/icon-generic-enterprise-directory.svg",
+        png: "../static/icons/light/icon-generic-enterprise-directory.png",
+      },
+      dark: {
+        svg: "../static/icons/dark/icon-generic-enterprise-directory.svg",
+        png: "../static/icons/dark/icon-generic-enterprise-directory.png",
+      }
     },
-    name: "Access Token"
+    name: "Generic Enterprise Directory"
   },
-  icon2: {
-    color: "color",
+  icon3: {
     images: {
-      svg: "../static/icons/color/icon-api-extend.svg",
-      png: "../static/icons/color/icon-api-extend.png",
-    },
-    name: "API Extend"
-  },
-  icon4: {
-    color: "color",
-    images: {
-      svg: "../static/icons/color/icon-api.svg",
-      png: "../static/icons/color/icon-api.png",
+      light:{
+        svg: "../static/icons/light/icon-api.svg",
+        png: "../static/icons/light/icon-api.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-api.svg",
+        png: "../static/icons/dark/icon-api.png",
+      },
     },
     name: "API"
   },
-  icon3: {
-    color: "color",
+  icon4: {
     images: {
-      svg: "../static/icons/color/icon-api-related.svg",
-      png: "../static/icons/color/icon-api-related.png",
+      light:{
+        svg: "../static/icons/light/icon-api-related.svg",
+        png: "../static/icons/light/icon-api-related.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-api-related.svg",
+        png: "../static/icons/dark/icon-api-related.png",
+      }
     },
     name: "API Related"
   },
   icon5: {
-    color: "color",
     images: {
-      svg: "../static/icons/color/icon-attributes.svg",
-      png: "../static/icons/color/icon-attributes.png",
+      light:{
+        svg: "../static/icons/light/icon-attributes.svg",
+        png: "../static/icons/light/icon-attributes.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-attributes.svg",
+        png: "../static/icons/dark/icon-attributes.png",
+      }
     },
     name: "Attributes"
   },
   icon6: {
-    color: "color",
     images: {
-      svg: "../static/icons/color/icon-auth0-authorization-server.svg",
-      png: "../static/icons/color/icon-auth0-authorization-server.png",
+      light:{
+        svg: "../static/icons/light/icon-auth0-authorization-server.svg",
+        png: "../static/icons/light/icon-auth0-authorization-server.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-auth0-authorization-server.svg",
+        png: "../static/icons/dark/icon-auth0-authorization-server.png",
+      }
     },
     name: "Auth0 Authorization Server"
   },
   icon7: {
-    color: "color",
     images: {
-      svg: "../static/icons/color/icon-authorization-server.svg",
-      png: "../static/icons/color/icon-authorization-server.png",
+      light:{
+        svg: "../static/icons/light/icon-authorization-server.svg",
+        png: "../static/icons/light/icon-authorization-server.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-authorization-server.svg",
+        png: "../static/icons/dark/icon-authorization-server.png",
+      }
     },
     name: "Authorization Server"
   },
-  icon23: {
-    color: "color",
+  icon8: {
     images: {
-      svg: "../static/icons/color/icon-server.svg",
-      png: "../static/icons/color/icon-server.png",
+      light:{
+        svg: "../static/icons/light/icon-server.svg",
+        png: "../static/icons/light/icon-server.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-server.svg",
+        png: "../static/icons/dark/icon-server.png",
+      }
     },
     name: "Server"
   },
-  icon8: {
-    color: "color",
+  icon9: {
     images: {
-      svg: "../static/icons/color/icon-backend.svg",
-      png: "../static/icons/color/icon-backend.png",
+      light:{
+        svg: "../static/icons/light/icon-backend.svg",
+        png: "../static/icons/light/icon-backend.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-backend.svg",
+        png: "../static/icons/dark/icon-backend.png",
+      }
     },
     name: "Backend"
   },
-  icon9: {
-    color: "color",
+  icon10: {
     images: {
-      svg: "../static/icons/color/icon-boundary-protocol.svg",
-      png: "../static/icons/color/icon-boundary-protocol.png",
+      light:{
+        svg: "../static/icons/light/icon-boundary-protocol.svg",
+        png: "../static/icons/light/icon-boundary-protocol.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-boundary-protocol.svg",
+        png: "../static/icons/dark/icon-boundary-protocol.png",
+      },
     },
     name: "Boundary Protocol"
   },
-  icon10: {
-    color: "color",
+  icon11: {
     images: {
-      svg: "../static/icons/color/icon-sdks.svg",
-      png: "../static/icons/color/icon-sdks.png",
+      light:{
+        svg: "../static/icons/light/icon-sdks.svg",
+        png: "../static/icons/light/icon-sdks.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-sdks.svg",
+        png: "../static/icons/dark/icon-sdks.png",
+      }
     },
     name: "SDK"
   },
-  icon11: {
-    color: "color",
+  icon12: {
     images: {
-      svg: "../static/icons/color/icon-browser.svg",
-      png: "../static/icons/color/icon-browser.png",
+      light:{
+        svg: "../static/icons/light/icon-browser.svg",
+        png: "../static/icons/light/icon-browser.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-browser.svg",
+        png: "../static/icons/dark/icon-browser.png",
+      }
     },
     name: "Browser"
   },
-  icon30: {
-    color: "color",
+  icon13: {
     images: {
-      svg: "../static/icons/color/icon-spa.svg",
-      png: "../static/icons/color/icon-spa.png",
+      light:{
+        svg: "../static/icons/light/icon-spa.svg",
+        png: "../static/icons/light/icon-spa.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-spa.svg",
+        png: "../static/icons/dark/icon-spa.png",
+      }
     },
     name: "SPA"
   },
-  icon12: {
-    color: "color",
+  icon14: {
     images: {
-      svg: "../static/icons/color/icon-certificate.svg",
-      png: "../static/icons/color/icon-certificate.png",
+      light:{
+        svg: "../static/icons/light/icon-certificate.svg",
+        png: "../static/icons/light/icon-certificate.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-certificate.svg",
+        png: "../static/icons/dark/icon-certificate.png",
+      }
     },
     name: "Certificate"
   },
-  icon13: {
-    color: "color",
+  icon15: {
     images: {
-      svg: "../static/icons/color/icon-cli-script.svg",
-      png: "../static/icons/color/icon-cli-script.png",
+      light:{
+        svg: "../static/icons/light/icon-cli-script.svg",
+        png: "../static/icons/light/icon-cli-script.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-cli-script.svg",
+        png: "../static/icons/dark/icon-cli-script.png",
+      }
     },
     name: "Cli Script"
   },
-  icon14: {
-    color: "color",
+  icon16: {
     images: {
-      svg: "../static/icons/color/icon-credential-application.svg",
-      png: "../static/icons/color/icon-credential-application.png",
+      light:{
+        svg: "../static/icons/light/icon-credential-application.svg",
+        png: "../static/icons/light/icon-credential-application.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-credential-application.svg",
+        png: "../static/icons/dark/icon-credential-application.png",
+      }
     },
     name: "Credential Application"
   },
-  icon15: {
-    color: "color",
+  icon17: {
     images: {
-      svg: "../static/icons/color/icon-credential-user.svg",
-      png: "../static/icons/color/icon-credential-user.png",
+      light: {
+        svg: "../static/icons/light/icon-credential-user.svg",
+        png: "../static/icons/light/icon-credential-user.png",
+      },
+
+      dark: {
+        svg: "../static/icons/dark/icon-credential-user.svg",
+        png: "../static/icons/dark/icon-credential-user.png",
+      }
     },
     name: "Credential User"
   },
-  icon16: {
-    color: "color",
+  icon18: {
     images: {
-      svg: "../static/icons/color/icon-dashboard.svg",
-      png: "../static/icons/color/icon-dashboard.png",
+      light: {
+        svg: "../static/icons/light/icon-dashboard.svg",
+        png: "../static/icons/light/icon-dashboard.png",
+      },
+
+      dark: {
+        svg: "../static/icons/dark/icon-dashboard.svg",
+        png: "../static/icons/dark/icon-dashboard.png",
+      }
     },
     name: "Auth0 Dashboard"
   },
-  icon17: {
-    color: "color",
+  icon19: {
     images: {
-      svg: "../static/icons/color/icon-desktop-app.svg",
-      png: "../static/icons/color/icon-desktop-app.png",
+      light: {
+        svg: "../static/icons/light/icon-desktop-app.svg",
+        png: "../static/icons/light/icon-desktop-app.png",
+      },
+
+      dark: {
+        svg: "../static/icons/dark/icon-desktop-app.svg",
+        png: "../static/icons/dark/icon-desktop-app.png",
+      }
     },
     name: "Desktop App"
   },
-  icon18: {
-    color: "color",
+  icon20: {
     images: {
-      svg: "../static/icons/color/icon-mobile-app.svg",
-      png: "../static/icons/color/icon-mobile-app.png",
+      light: {
+        svg: "../static/icons/light/icon-mobile-app.svg",
+        png: "../static/icons/light/icon-mobile-app.png",
+      },
+      dark: {
+        svg: "../static/icons/dark/icon-mobile-app.svg",
+        png: "../static/icons/dark/icon-mobile-app.png",
+      }
     },
     name: "Mobile App"
   },
-  icon19: {
-    color: "color",
+  icon21: {
     images: {
-      svg: "../static/icons/color/icon-generic-enterprise-directory.svg",
-      png: "../static/icons/color/icon-generic-enterprise-directory.png",
+      light:{
+        svg: "../static/icons/light/icon-access-token.svg",
+        png: "../static/icons/light/icon-access-token.png",
+      },
+      dark:{
+        svg: "../static/icons/dark/icon-access-token.svg",
+        png: "../static/icons/dark/icon-access-token.png",
+      },
     },
-    name: "Generic Enterprise Directory"
+    name: "Access Token"
   },
-  icon20: {
-    color: "color",
+  icon22: {
     images: {
-      svg: "../static/icons/color/icon-id-token.svg",
-      png: "../static/icons/color/icon-id-token.png",
+      light: {
+        svg: "../static/icons/light/icon-id-token.svg",
+        png: "../static/icons/light/icon-id-token.png",
+      },
+      dark: {
+        svg: "../static/icons/dark/icon-id-token.svg",
+        png: "../static/icons/dark/icon-id-token.png",
+      }
     },
     name: "ID Token"
   },
-  icon21: {
-    color: "color",
+  icon23: {
     images: {
-      svg: "../static/icons/color/icon-refresh-token.svg",
-      png: "../static/icons/color/icon-refresh-token.png",
+      light: {
+        svg: "../static/icons/light/icon-refresh-token.svg",
+        png: "../static/icons/light/icon-refresh-token.png",
+      },
+      dark: {
+        svg: "../static/icons/dark/icon-refresh-token.svg",
+        png: "../static/icons/dark/icon-refresh-token.png",
+      }
     },
     name: "Tefresh Token"
   },
-  icon22: {
-    color: "color",
+  icon24: {
     images: {
-      svg: "../static/icons/color/icon-pipeline.svg",
-      png: "../static/icons/color/icon-pipeline.png",
+      light: {
+        svg: "../static/icons/light/icon-pipeline.svg",
+        png: "../static/icons/light/icon-pipeline.png",
+      },
+      dark: {
+        svg: "../static/icons/dark/icon-pipeline.svg",
+        png: "../static/icons/dark/icon-pipeline.png",
+      }
     },
     name: "Pipeline"
   },
-  icon24: {
-    color: "color",
-    images: {
-      svg: "../static/icons/color/icon-sdks.svg",
-      png: "../static/icons/color/icon-auth0.png",
-    },
-    name: "SDK"
-  },
   icon25: {
-    color: "color",
     images: {
-      svg: "../static/icons/color/icon-social-providers.svg",
-      png: "../static/icons/color/icon-social-providers.png",
+      light: {
+        svg: "../static/icons/light/icon-auth0.svg",
+        png: "../static/icons/light/icon-auth0.png",
+      },
+      dark: {
+        svg: "../static/icons/dark/icon-auth0.svg",
+        png: "../static/icons/dark/icon-auth0.png",
+      }
+    },
+    name: "Auth0"
+  },
+  icon26: {
+    images: {
+      light: {
+        svg: "../static/icons/light/icon-social-providers.svg",
+        png: "../static/icons/light/icon-social-providers.png",
+      },
+      dark: {
+        svg: "../static/icons/dark/icon-social-providers.svg",
+        png: "../static/icons/dark/icon-social-providers.png",
+      }
     },
     name: "Social-Providers"
   },
-  icon26: {
-    color: "color",
+  icon27: {
     images: {
-      svg: "../static/icons/color/icon-user-db.svg",
-      png: "../static/icons/color/icon-user-db.png",
+      light: {
+        svg: "../static/icons/light/icon-user-db.svg",
+        png: "../static/icons/light/icon-user-db.png",
+      },
+      dark: {
+        svg: "../static/icons/dark/icon-user-db.svg",
+        png: "../static/icons/dark/icon-user-db.png",
+      }
     },
     name: "User Data Base"
   },
-  icon27: {
-    color: "color",
+  icon28: {
     images: {
-      svg: "../static/icons/color/icon-user.svg",
-      png: "../static/icons/color/icon-user.png",
+      light: {
+        svg: "../static/icons/light/icon-user.svg",
+        png: "../static/icons/light/icon-user.png",
+      },
+      dark: {
+        svg: "../static/icons/dark/icon-user.svg",
+        png: "../static/icons/dark/icon-user.png",
+      }
     },
     name: "User"
   },
-  icon28: {
-    color: "color",
+  icon29: {
     images: {
-      svg: "../static/icons/color/icon-web-app.svg",
-      png: "../static/icons/color/icon-web-app.png",
+      light: {
+        svg: "../static/icons/light/icon-web-app.svg",
+        png: "../static/icons/light/icon-web-app.png",
+      },
+      dark: {
+        svg: "../static/icons/dark/icon-web-app.svg",
+        png: "../static/icons/dark/icon-web-app.png",
+      }
     },
     name: "Web App"
   },
-  icon29: {
-    color: "color",
+  icon30: {
     images: {
-      svg: "../static/icons/color/icon-cookie.svg",
-      png: "../static/icons/color/icon-cookie.png",
+      light: {
+        svg: "../static/icons/light/icon-cookie.svg",
+        png: "../static/icons/light/icon-cookie.png",
+      },
+      dark: {
+        svg: "../static/icons/dark/icon-cookie.svg",
+        png: "../static/icons/dark/icon-cookie.png",
+      }
     },
     name: "Cookie"
   },
