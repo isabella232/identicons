@@ -6,36 +6,82 @@ class Samples extends Component {
 
   render() {
     const settings = {
-      dots: true,
-      infinite: true,
       speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      dots: true,
+      centerMode: true,
+      fofocusOnSelect: false
     };
     
     return (
       <Container>
-        <p> Single Item</p>
-        <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
+       <div className="section-samples">
+          <h4 className="h4">Use cases</h4>
+          <Slider {...settings}>
+            <div className="item">
+              <img src="../static/site/samples/sample.png" alt="Sample 1" width="280" />
+            </div>
+            <div className="item">
+              <img src="../static/site/samples/sample.png" alt="Sample 2" width="280" />
+            </div>
+            <div className="item">
+              <img src="../static/site/samples/sample.png" alt="Sample 3" width="280" />
+            </div>
+            <div className="item">
+              <img src="../static/site/samples/sample.png" alt="Sample 4" width="280" />
+            </div>
+          </Slider>
+        </div>
+
+        <style jsx>{`
+
+            .section-samples {
+              padding: 7rem 0 10rem;
+              position: relative;
+            }
+
+            .section-samples:before, .section-samples:after {
+              display: block;
+              content: '';
+              width: 100px;
+              top: 0;
+              bottom: 0;
+              position: absolute;
+              background: rgb(255,255,255);
+              background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+            }
+            .section-samples:before{
+              left: 0;
+              z-index: 10;
+            }
+            
+            .section-samples:after {
+              right: 0;
+              z-index: 10;
+              transform: rotate(180deg);
+            }
+
+            .h4 {
+              text-align: center;
+              text-transform: uppercase;
+              font-size: 1.5rem;
+              padding-bottom: 4rem;
+              opacity: 0.64;
+            }
+            .item {
+              padding: 10px 15px;
+            }
+
+            .item:focus {
+              outline: none;
+            }
+
+            .item img {
+              border: 4px solid #ededed;
+            }
+          `}
+        </style>
       </Container>
     );
   }
