@@ -2,18 +2,21 @@ import React from 'react';
 
 const IconBox = (props) => {
   const icon = props.iconSet[props.currentIcon];
+  const baseImgURL = '../static/icons/';
 
   return (
-    <div className={props.IconBoxActive ? "icon-box" : "hide icon-box"}>
-      <img className="icon" src={icon ? icon.images.light.svg : ''} alt={icon ? icon.name:''} width='80px'/>
+    <div className={props.iconBoxActive ? "icon-box " + props.mode : "hide icon-box " + props.mode}>
+      <div className="icon-wrapper">
+        <img className="icon" src={icon ? baseImgURL + props.mode + '/' + icon.image + '.svg' : ''} alt={icon ? icon.name:''} width='80px'/>
+      </div>
       <div className="icon-description">
         <p className="icon-name">{icon ? icon.name : ""}</p>
         <p className="icon-size">400x400</p>
       </div>
       <div className="icon-download">
         <p className="download-copy">DOWNLOAD</p>
-        <a href={icon ? icon.images.light.png : ''} download>PNG</a>
-        <a href={icon ? icon.images.light.svg : ''} download>SVG</a>
+        <a href={icon ? baseImgURL + props.mode + '/' + icon.image + '.png' : ''} download>PNG</a>
+        <a href={icon ? baseImgURL + props.mode + '/' + icon.image + '.svg' : ''} download>SVG</a>
       </div>
       <div className="close-box" onClick={() => props.closeIconBox()}>
         <img src="../static/site/icon-close.svg" alt="Close" width="12"/>
@@ -21,6 +24,7 @@ const IconBox = (props) => {
       <style jsx>{`
           .icon-box {
             display: flex;
+            background: white;
             flex-direction: row;
             align-items: center;
             background: white;
@@ -35,6 +39,13 @@ const IconBox = (props) => {
             -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.4);
             -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.4);
             box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.4);
+            z-index: 11;
+          }
+
+          .dark .icon-wrapper {
+            background: #333;
+            border-radius: 3px;
+            overflow: hidden;
           }
 
           .icon-description {

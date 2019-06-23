@@ -10,19 +10,26 @@ import Modal from '../components/Modal'
 class Index extends React.Component {
   state = {
     currentIcon: {},
-    IconBoxActive: false
+    iconBoxActive: false,
+    mode: 'light'
   };
 
   setCurrentIcon = icon => {
     this.setState({
       currentIcon: icon,
-      IconBoxActive: true
+      iconBoxActive: true
+    })
+  }
+
+  setMode = mode => {
+    this.setState({
+      mode: mode
     })
   }
 
   closeIconBox = () => {
     this.setState({
-      IconBoxActive: false
+      iconBoxActive: false
     })
   }
 
@@ -30,9 +37,9 @@ class Index extends React.Component {
     return (
       <div className="main-page">
         <Hero />
-        <IconSection icons={iconSet} setCurrentIcon={this.setCurrentIcon}/>
+        <IconSection setMode={this.setMode} mode={this.state.mode} icons={iconSet} setCurrentIcon={this.setCurrentIcon}/>
         <SamplesSection />
-        <IconBox  IconBoxActive={this.state.IconBoxActive} iconSet={iconSet} currentIcon={this.state.currentIcon} closeIconBox={this.closeIconBox}/>
+        <IconBox mode={this.state.mode} iconBoxActive={this.state.iconBoxActive} iconSet={iconSet} currentIcon={this.state.currentIcon} closeIconBox={this.closeIconBox}/>
         
       </div>
     )
