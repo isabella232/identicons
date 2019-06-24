@@ -1,16 +1,12 @@
-# [Identicons](https://identicons.dev/)
+# Introducing Identicons
 
-An Open Source icon system for Identity language by [Auth0](https://auth0.com). 
+An Open Source icon system for Identity language by [Auth0](https://auth0.com). A royalty-free, free-to-use icons and clipart representing fundamental identity concepts. Use them in presentations, specifications and documentation. For more details, read the [announcement blog post](https://auth0.com/blog/introducing-auth0-identicons-identity-icons).
 
-### Introducing Identicons
-
-Royalty-free, free-to-use icons and clipart representing fundamental identity concepts. Use them in presentations, specifications and documentation. For more details, read the [announcement blog post](https://auth0.com/blog/introducing-auth0-identicons-identity-icons).
-
-### How to use them?
+## How to use them?
 
 You can download the whole set of icons or just the icons that you need from the [identicons.dev](https://identicons.dev).
 
-### Do you want to contribute with icons?
+## Do you want to contribute with icons?
 
 Awesome! To contribute you have to make a pull request with following data:
 
