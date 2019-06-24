@@ -49,7 +49,7 @@ The key looks something like this:
   ```
 
   So you have to:
-  - See the **Last Icon Number** and add the next in `icon#`.
+  - Check the **Last Icon Number** and add the next in `icon#`.
   - Add the **Image File Name**(without the file extension) into the `image:`.
   - and lastly, add the **Icon Name** that you think correct into the `name:`.
 
