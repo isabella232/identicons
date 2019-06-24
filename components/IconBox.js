@@ -5,7 +5,7 @@ const IconBox = (props) => {
   const baseImgURL = '../static/icons/';
 
   return (
-    <div className={"icon-box " + (props.iconBoxActive ? props.mode : "hide " + props.mode)}>
+    <div className={"icon-box " + (props.iconBoxActive ? props.mode : "silence " + props.mode)}>
       <div className="icon-wrapper">
         <img className="icon" src={icon ? baseImgURL + props.mode + '/' + icon.image + '.svg' : ''} alt={icon ? icon.name:''} width='80px'/>
       </div>
@@ -45,7 +45,7 @@ const IconBox = (props) => {
             transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
           }
 
-          .icon-box.hide {
+          .icon-box.silence {
             opacity: 0;
             pointer-events: none;
             bottom: 15px;
@@ -68,11 +68,10 @@ const IconBox = (props) => {
             text-transform: uppercase;
             font-weight: 600;
             margin: 0 0 5px;
-            opacity: 0.8;
           }
 
           .icon-size {
-            opacity: 0.4;
+            opacity: 0.6;
             margin: 0;
           }
 
@@ -84,7 +83,7 @@ const IconBox = (props) => {
           .download-copy {
             display: inline-block;
             margin:0 25px 0 0;
-            opacity: 0.4;
+            opacity: 0.6;
             font-size: 1.2rem;
           }
 

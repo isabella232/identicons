@@ -6,12 +6,14 @@ import IconBox from "../components/IconBox";
 import iconSet from '../base/iconSet';
 import Modal from '../components/Modal'
 
-
 class Index extends React.Component {
   state = {
     currentIcon: {},
     iconBoxActive: false,
-    mode: 'light'
+    mode: 'light',
+    modalOpen: false,
+    modalImage: "",
+    modalName: ""
   };
 
   setCurrentIcon = icon => {
@@ -33,12 +35,27 @@ class Index extends React.Component {
     })
   }
 
+  openModal = (url, name) => {
+    this.setState({ 
+      modalOpen: true,
+      modalImage: url,
+      modalName: name
+    });
+
+  }
+
+
+  closeModal = () => {
+    this.setState({ modalOpen: false });
+  }
+
   render() {
     return (
       <div className="main-page">
+        {this.state.modalOpen &&  <Modal closeModal={this.closeModal} image={this.state.modalImage} imageName={this.state.modalName} />}
         <Hero />
         <IconSection setMode={this.setMode} mode={this.state.mode} icons={iconSet} setCurrentIcon={this.setCurrentIcon}/>
-        <SamplesSection />
+        <SamplesSection  openModal={this.openModal} closeModal={this.closeModal}/>
         <IconBox mode={this.state.mode} iconBoxActive={this.state.iconBoxActive} iconSet={iconSet} currentIcon={this.state.currentIcon} closeIconBox={this.closeIconBox}/>
         
       </div>

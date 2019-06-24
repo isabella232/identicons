@@ -6,6 +6,7 @@ class Samples extends Component {
 
   render() {
     const settings = {
+      autoplay: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -20,16 +21,16 @@ class Samples extends Component {
           <h4 className="h4">Use cases</h4>
           <Slider {...settings}>
             <div className="item">
-              <img src="../static/site/samples/sample.png" alt="Sample 1" width="280" />
+              <img onClick={() => this.props.openModal('../static/site/samples/sample.png', 'Name')} src="../static/site/samples/sample.png" alt="Sample 1" width="280" />
             </div>
             <div className="item">
-              <img src="../static/site/samples/sample.png" alt="Sample 2" width="280" />
+              <img onClick={() => this.props.openModal('../static/site/samples/sample.png', 'Name1')} src="../static/site/samples/sample.png" alt="Sample 2" width="280" />
             </div>
             <div className="item">
-              <img src="../static/site/samples/sample.png" alt="Sample 3" width="280" />
+              <img onClick={() => this.props.openModal('../static/site/samples/sample.png', 'Name2')}  src="../static/site/samples/sample.png" alt="Sample 3" width="280" />
             </div>
             <div className="item">
-              <img src="../static/site/samples/sample.png" alt="Sample 4" width="280" />
+              <img onClick={() => this.props.openModal('../static/site/samples/sample.png', 'Name3')}  src="../static/site/samples/sample.png" alt="Sample 4" width="280" />
             </div>
           </Slider>
         </div>
@@ -67,7 +68,7 @@ class Samples extends Component {
               text-transform: uppercase;
               font-size: 1.5rem;
               padding-bottom: 4rem;
-              opacity: 0.64;
+              opacity: 1;
             }
             .item {
               padding: 10px 15px;
@@ -79,6 +80,7 @@ class Samples extends Component {
 
             .item img {
               border: 4px solid #ededed;
+              cursor: pointer;
             }
           `}
         </style>

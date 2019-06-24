@@ -10,6 +10,21 @@ class Identicons extends App {
     return (
       <Layout>
         <Component {...pageProps} />
+        <style global jsx>{`
+        html {
+          font-size: 10px;
+        }
+        
+        body {
+          -webkit-font-smoothing: auto;
+        }
+
+        .identicons-page { 
+          margin: 0;
+          padding: 0;
+          color: rgba(0, 0, 0, 0.7);
+        }
+      `}</style>
       </Layout>
     )
   }

@@ -1,20 +1,21 @@
 
 # [Identicons](https://identiverse.dev/)
 
-> An Open Source Identity Icons System.
+An Open Source Identity Icons System.
 
-
+&nbsp;
+&nbsp;
 
 ### Introducing Identicons
 
-> Auth0 is releasing a set of royalty-free, free-to-use icons and clipart representing fundamental identity concepts and artifacts frequently used to describe topologies and solutions in presentations, specifications and documentation. Please read more [here](https://auth0.com/blog/).
+Auth0 is releasing a set of royalty-free, free-to-use icons and clipart representing fundamental identity concepts and artifacts frequently used to describe topologies and solutions in presentations, specifications and documentation. Please read more [here](https://auth0.com/blog/).
 
 &nbsp;
 &nbsp;
 
 ### How to use them?
 
-> You can download the set of icons or just the icons that you need from the [Identicons](https://identicons.dev) website.
+You can download the set of icons or just the icons that you need from the [Identicons](https://identicons.dev) website.
 
 &nbsp;
 &nbsp;

@@ -50,6 +50,8 @@ class IconGrid extends Component {
           .icon-description {
             font-size: 1.2rem;
             line-height: 1.5;
+            font-weight: bold;
+            color: black;
           }
 
           .icon-description.dark {
@@ -67,6 +69,7 @@ class IconGrid extends Component {
           .icon {
             max-width: 70px;
             max-height: 70px;
+            margin-bottom: 10px;
           }
         `}
         </style>
