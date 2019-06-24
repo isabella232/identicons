@@ -22,6 +22,8 @@ class IconsNav extends Component {
             display: inline-block;
             text-transform: uppercase;
             cursor: pointer;
+            font-weight: 600;
+            color: black;
           }
 
           .filter:last-child {
@@ -29,11 +31,11 @@ class IconsNav extends Component {
           }
 
           .filter.selected {
-            border-bottom: 1px solid black;
+            border-bottom: 2px solid black;
           }
 
           .dark .filter.selected {
-            border-bottom: 1px solid white;
+            border-bottom: 2px solid white;
           }
 
           .dark .filter {
