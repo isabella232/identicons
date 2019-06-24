@@ -5,13 +5,15 @@ const IconBox = (props) => {
   const baseImgURL = '../static/icons/';
 
   return (
-    <div className={props.iconBoxActive ? "icon-box " + props.mode : "hide icon-box " + props.mode}>
+    // <div className={props.iconBoxActive ?  + props.mode : "hide icon-box " + props.mode}>
+    <div className={"icon-box " + (props.iconBoxActive ? props.mode : "hide " + props.mode)}>
       <div className="icon-wrapper">
         <img className="icon" src={icon ? baseImgURL + props.mode + '/' + icon.image + '.svg' : ''} alt={icon ? icon.name:''} width='80px'/>
       </div>
       <div className="icon-description">
         <p className="icon-name">{icon ? icon.name : ""}</p>
         <p className="icon-size">400x400</p>
+        <p className="icon-size">pepe</p>
       </div>
       <div className="icon-download">
         <p className="download-copy">DOWNLOAD</p>
@@ -24,6 +26,10 @@ const IconBox = (props) => {
       <style jsx>{`
           .icon-box {
             display: flex;
+            position: fixed;
+            bottom: 25px;
+            left: 50%;
+            padding: 10px;
             background: white;
             flex-direction: row;
             align-items: center;
@@ -31,15 +37,21 @@ const IconBox = (props) => {
             border-radius: 3px;
             height: 100px;
             width: 966px;
-            position: fixed;
-            bottom: 25px;
-            left: 50%;
-            padding: 10px;
             transform: translateX(-50%);
             -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.4);
             -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.4);
             box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.4);
             z-index: 11;
+            opacity: 1;
+            pointer-events: auto;
+            transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+          }
+
+          .icon-box.hide {
+            opacity: 0;
+            pointer-events: none;
+            bottom: 15px;
+            transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
           }
 
           .dark .icon-wrapper {
@@ -95,10 +107,6 @@ const IconBox = (props) => {
             align-self: flex-start;
             order: 4;
             margin-top: -8px;
-          }
-
-          .hide {
-            display: none;
           }
         `}
       </style>
