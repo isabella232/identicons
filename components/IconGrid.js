@@ -50,7 +50,6 @@ class IconGrid extends Component {
           .icon-description {
             font-size: 1.2rem;
             line-height: 1.5;
-            font-weight: bold;
             color: black;
           }
 
