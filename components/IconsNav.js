@@ -13,16 +13,19 @@ class IconsNav extends Component {
         <style jsx>{`
 
           .icon-nav {
-            text-align: right;
+            text-align: center;
             padding-right: 20px;
             margin-bottom: 4rem;
           }
 
           .filter {
             display: inline-block;
-            margin-left: 15px;
             text-transform: uppercase;
             cursor: pointer;
+          }
+
+          .filter:last-child {
+            margin-left: 15px;
           }
 
           .filter.selected {
