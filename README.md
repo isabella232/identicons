@@ -8,12 +8,14 @@
 ### Introducing Identicons
 
 > Auth0 is releasing a set of royalty-free, free-to-use icons and clipart representing fundamental identity concepts and artifacts frequently used to describe topologies and solutions in presentations, specifications and documentation. Please read more [here](https://auth0.com/blog/).
+
 &nbsp;
 &nbsp;
 
 ### How to use them?
 
 > You can download the set of icons or just the icons that you need from the [Identicons](https://identicons.dev) website.
+
 &nbsp;
 &nbsp;
 
@@ -32,6 +34,8 @@ To contribute you have to make a pull request with following data:
   - All the icons must to have transparent background.
   - The `.png` icons size have to be 400x400 pixels.
   -  **The file name must be the same all cases**.
+
+&nbsp;
 &nbsp;
 
 2. Once added the icons you will have to create a new key in `./base/iconSet.js`.
@@ -49,6 +53,7 @@ The key looks something like this:
   - Add the **Image File Name**(without the file extension) into the `image:`.
   - and lastly, add the **Icon Name** that you think correct into the `name:`.
 
+&nbsp;
 &nbsp;
 
 That's it!
