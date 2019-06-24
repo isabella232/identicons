@@ -5,7 +5,6 @@ const IconBox = (props) => {
   const baseImgURL = '../static/icons/';
 
   return (
-    // <div className={props.iconBoxActive ?  + props.mode : "hide icon-box " + props.mode}>
     <div className={"icon-box " + (props.iconBoxActive ? props.mode : "hide " + props.mode)}>
       <div className="icon-wrapper">
         <img className="icon" src={icon ? baseImgURL + props.mode + '/' + icon.image + '.svg' : ''} alt={icon ? icon.name:''} width='80px'/>
