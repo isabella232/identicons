@@ -97,7 +97,7 @@ const iconSet = {
   },
   icon26: {
     image: "icon-social-providers",
-    name: "Social-Providers"
+    name: "Social Providers"
   },
   icon27: {
     image: "icon-user-db",

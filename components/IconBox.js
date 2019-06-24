@@ -12,7 +12,6 @@ const IconBox = (props) => {
       <div className="icon-description">
         <p className="icon-name">{icon ? icon.name : ""}</p>
         <p className="icon-size">400x400</p>
-        <p className="icon-size">pepe</p>
       </div>
       <div className="icon-download">
         <p className="download-copy">DOWNLOAD</p>
