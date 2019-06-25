@@ -8,7 +8,10 @@ const Hero = () => {
         <h1 className="hero-title">A visual language for identity</h1>
         <p className="hero-copy">Royalty-free, free-to-use icons and clipart representing fundamental identity concepts. Use them in presentations, specifications and documentation. <br />For more details <a href="https://auth0.com/blog/introducing-auth0-identicons-identity-icons" target="_blank">read more</a>.</p>
         <div className="call-to-action">
-          <a className="btn btn-transparent btn-lg" href="../static/icons/identicons-set.zip" download>⬇ Download Set</a>
+          <a className="btn btn-transparent btn-lg" href="../static/icons/identicons-set.zip" download>
+            <img className="github" src="../static/site/download-icon.svg" width="12"></img>
+            Download Set
+          </a>
           <a className="btn btn-transparent btn-lg" href="https://github.com/auth0/identicons" > 
             <img className="github" src="../static/site/github-icon.svg" width="18"></img>
              Contribute
