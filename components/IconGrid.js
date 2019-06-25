@@ -70,6 +70,19 @@ class IconGrid extends Component {
             max-height: 70px;
             margin-bottom: 10px;
           }
+
+          @media(max-width: 900px) {
+            .icon-grid {
+              grid-template-columns: repeat(4, 158px);
+            }
+          }
+
+          @media(max-width: 600px) {
+            .icon-grid {
+              grid-template-columns: repeat(2, 158px);
+            }
+          }
+
         `}
         </style>
       </ul>

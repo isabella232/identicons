@@ -33,8 +33,13 @@ const Hero = () => {
           margin: 0px auto  10rem;
         }
 
+        .call-to-action a {
+          width: auto;
+        }
+
         .call-to-action a:last-child {
           margin-left: 25px;
+          margin-top: 0;
         }
 
         .github {
@@ -47,6 +52,26 @@ const Hero = () => {
           line-height: 1.8;
           max-width: 67rem;
           margin: 0px auto 4rem;
+        }
+
+        @media(max-width: 600px) {
+        
+          .hero-title { 
+            margin: 2rem auto 4rem;
+          }
+
+          .call-to-action {
+            margin: 0px auto  7rem;
+          }
+
+          .call-to-action a:last-child {
+            margin-left: 0;
+            margin-top: 25px;
+          }
+
+          .call-to-action a {
+            width: 100%;
+          }
         }
       `}
       </style>

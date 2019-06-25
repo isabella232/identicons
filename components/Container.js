@@ -21,6 +21,13 @@ class Container extends React.Component {
             clear: both;
             display: block;
           }
+
+          
+          @media(max-width: 600px) {
+            .container {
+            padding: 1rem 2rem;
+            }
+          }
         `}
         </style>
       </div>

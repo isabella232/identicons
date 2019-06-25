@@ -21,6 +21,12 @@ const IconSection = (props) => {
           .icon-section.dark {
             background: black;
           }
+
+          @media(max-width: 600px) {
+            .icon-section {
+              padding: 6rem 0 3rem;
+            }
+          }
         `}
       </style>
     </section>

@@ -14,21 +14,23 @@ class Samples extends Component {
     };
     
     return (
-      <Container>
-       <div className="section-samples">
-          <h4 className="h4">Use cases</h4>
-          <Slider {...settings}>
-            <div className="item">
-              <img onClick={() => this.props.openModal('../static/site/samples/sample-1.jpg', 'Tentants')} src="../static/site/samples/sample-1.jpg" alt="Tentants" width="280" />
-            </div>
-            <div className="item">
-              <img onClick={() => this.props.openModal('../static/site/samples/sample-2.jpg', 'Introduction to Identity')} src="../static/site/samples/sample-2.jpg" alt="Introduction to Identity" width="280" />
-            </div>
-            <div className="item">
-              <img onClick={() => this.props.openModal('../static/site/samples/sample-3.jpg', 'User Directory')}  src="../static/site/samples/sample-3.jpg" alt="User Directory" width="280" />
-            </div>
-          </Slider>
-        </div>
+      <div className="samples-section">
+        <Container>
+          <div className="section-samples">
+            <h4 className="h4">Use cases</h4>
+            <Slider {...settings}>
+              <div className="item">
+                <img onClick={() => this.props.openModal('../static/site/samples/sample-1.jpg', 'Tentants')} src="../static/site/samples/sample-1.jpg" alt="Tentants" width="280" />
+              </div>
+              <div className="item">
+                <img onClick={() => this.props.openModal('../static/site/samples/sample-2.jpg', 'Introduction to Identity')} src="../static/site/samples/sample-2.jpg" alt="Introduction to Identity" width="280" />
+              </div>
+              <div className="item">
+                <img onClick={() => this.props.openModal('../static/site/samples/sample-3.jpg', 'User Directory')}  src="../static/site/samples/sample-3.jpg" alt="User Directory" width="280" />
+              </div>
+            </Slider>
+          </div>
+        </Container>
 
         <style jsx>{`
 
@@ -78,9 +80,16 @@ class Samples extends Component {
               cursor: pointer;
               margin: 0 45px;
             }
+
+            @media(max-width: 945px) {
+
+              .samples-section {
+                display: none;
+              }
+            }
           `}
         </style>
-      </Container>
+      </div>
     );
   }
 }

@@ -7,7 +7,7 @@ const IconBox = (props) => {
   return (
     <div className={"icon-box " + (props.iconBoxActive ? props.mode : "silence " + props.mode)}>
       <div className="icon-wrapper">
-        <img className="icon" src={icon ? baseImgURL + props.mode + '/' + icon.image + '.svg' : ''} alt={icon ? icon.name:''} width='80px'/>
+        <img className="icon" src={icon ? baseImgURL + props.mode + '/' + icon.image + '.svg' : ''} alt={icon ? icon.name:''}/>
       </div>
       <div className="icon-description">
         <p className="icon-name">{icon ? icon.name : ""}</p>
@@ -52,6 +52,10 @@ const IconBox = (props) => {
             transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
           }
 
+          .icon-box .icon {
+            width: 80px;
+          }
+
           .dark .icon-wrapper {
             background: #333;
             border-radius: 3px;
@@ -62,6 +66,7 @@ const IconBox = (props) => {
             flex-grow: 2;
             line-height: 1.5;
             padding-left: 10px;
+            font-size: 14px;
           }
 
           .icon-name {
@@ -104,6 +109,30 @@ const IconBox = (props) => {
             align-self: flex-start;
             order: 4;
             margin-top: -8px;
+          }
+          
+          @media(max-width: 600px) {
+
+            .icon-box {
+              width: 95%;  
+            }
+
+            .dark .icon-wrapper {
+              overflow: initial;
+            }
+            
+            .icon-box .icon {
+              width: 65px;
+            }
+          
+            .icon-description {
+              padding-left: 10px;
+              font-size: 12px;
+            }
+
+            .download-copy {
+              display: none;
+            }
           }
         `}
       </style>
