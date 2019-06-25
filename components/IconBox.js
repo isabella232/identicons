@@ -34,7 +34,8 @@ const IconBox = (props) => {
             background: white;
             border-radius: 3px;
             height: 100px;
-            width: 966px;
+            width: 95%; 
+            max-width: 966px;
             transform: translateX(-50%);
             -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.4);
             -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.4);
@@ -112,10 +113,6 @@ const IconBox = (props) => {
           }
           
           @media(max-width: 600px) {
-
-            .icon-box {
-              width: 95%;  
-            }
 
             .dark .icon-wrapper {
               overflow: initial;
