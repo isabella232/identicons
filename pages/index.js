@@ -5,6 +5,7 @@ import SamplesSection from "../components/SamplesSection";
 import IconBox from "../components/IconBox";
 import iconSet from '../base/iconSet';
 import Modal from '../components/Modal'
+import Layout from '../components/Layout'
 
 class Index extends React.Component {
   state = {
@@ -51,14 +52,15 @@ class Index extends React.Component {
 
   render() {
     return (
-      <div className="main-page">
-        {this.state.modalOpen &&  <Modal closeModal={this.closeModal} image={this.state.modalImage} imageName={this.state.modalName} />}
-        <Hero />
-        <IconSection setMode={this.setMode} mode={this.state.mode} icons={iconSet} setCurrentIcon={this.setCurrentIcon}/>
-        <SamplesSection  openModal={this.openModal} closeModal={this.closeModal}/>
-        <IconBox mode={this.state.mode} iconBoxActive={this.state.iconBoxActive} iconSet={iconSet} currentIcon={this.state.currentIcon} closeIconBox={this.closeIconBox}/>
-        
-      </div>
+      <Layout>
+        <div className="main-page">
+          {this.state.modalOpen &&  <Modal closeModal={this.closeModal} image={this.state.modalImage} imageName={this.state.modalName} />}
+          <Hero />
+          <IconSection setMode={this.setMode} mode={this.state.mode} icons={iconSet} setCurrentIcon={this.setCurrentIcon}/>
+          <SamplesSection  openModal={this.openModal} closeModal={this.closeModal}/>
+          <IconBox mode={this.state.mode} iconBoxActive={this.state.iconBoxActive} iconSet={iconSet} currentIcon={this.state.currentIcon} closeIconBox={this.closeIconBox}/>
+        </div>
+      </Layout>
     )
   }
 };
