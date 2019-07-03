@@ -1,13 +1,9 @@
-import Link from "next/link";
-
 const HeaderNav = () => {
   return ( 
     <nav className="header-nav">
       <ul className="navigation">
         <li>
-          <Link href="https://github.com/auth0/identicons" >
-            <a target="_blank">Usage</a>
-          </Link>
+          <a href="https://github.com/auth0/identicons" target="_blank">Usage</a>
         </li>
       </ul>
       <style jsx>{`
