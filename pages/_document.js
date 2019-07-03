@@ -3,7 +3,7 @@ import Document, { Head, Main, NextScript } from 'next/document'
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    return initialProps
   }
 
   render() {
@@ -67,7 +67,7 @@ export default class MyDocument extends Document {
           />
           <meta name="google-site-verification" content="IXxB6hv45d2ZH_S9bHfRP5M45c9_K9287ia6saqJXvw" />
         </Head>
-        <body className="identicons-page">
+        <body>
           <Main />
           <NextScript />
         </body>
