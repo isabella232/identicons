@@ -2,6 +2,12 @@
 
 An Open Source icon system for Identity language by [Auth0](https://auth0.com). A royalty-free, free-to-use icons and clipart representing fundamental identity concepts. Use them in presentations, specifications and documentation. For more details, read the [announcement blog post](https://auth0.com/blog/introducing-auth0-identicons-identity-icons).
 
+## Sponsor
+
+|||
+|-|-|
+|![auth0 logo](https://user-images.githubusercontent.com/83319/31722733-de95bbde-b3ea-11e7-96bf-4f4e8f915588.png)|If you want to quickly add secure token-based authentication to your projects, feel free to check Auth0's documentation and free plan at [auth0.com/developers](https://auth0.com/developers?utm_source=GHsponsor&utm_medium=GHsponsor&utm_campaign=identicons&utm_content=auth)|
+
 ## How to Use Them?
 
 You can download the whole set of icons or just the icons that you need from the [identicons.dev](https://identicons.dev) site.
