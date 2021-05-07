@@ -11,7 +11,7 @@ class Index extends React.Component {
   state = {
     currentIcon: {},
     iconBoxActive: false,
-    mode: 'light',
+    mode: 'mono',
     modalOpen: false,
     modalImage: "",
     modalName: ""
