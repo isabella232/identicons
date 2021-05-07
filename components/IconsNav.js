@@ -7,8 +7,8 @@ class IconsNav extends Component {
     return (
       <div className="icon-nav">
         <ul className={"icon-filter " + mode}>
-          <li className={"filter" + (mode==="light" ? " selected" : "") } onClick={() => this.props.setMode("light")}>Light</li>
-          <li className={"filter" + (mode==="dark" ? " selected" : "") } onClick={() => this.props.setMode("dark")}>Dark</li>
+          <li className={"filter" + (mode==="mono" ? " selected" : "") } onClick={() => this.props.setMode("mono")}>Monochrome</li>
+          <li className={"filter" + (mode==="gray" ? " selected" : "") } onClick={() => this.props.setMode("gray")}>Grayscale</li>
         </ul>
         <style jsx>{`
 
