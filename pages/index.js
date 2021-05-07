@@ -57,7 +57,6 @@ class Index extends React.Component {
           {this.state.modalOpen &&  <Modal closeModal={this.closeModal} image={this.state.modalImage} imageName={this.state.modalName} />}
           <Hero />
           <IconSection setMode={this.setMode} mode={this.state.mode} icons={iconSet} setCurrentIcon={this.setCurrentIcon}/>
-          <SamplesSection  openModal={this.openModal} closeModal={this.closeModal}/>
           <IconBox mode={this.state.mode} iconBoxActive={this.state.iconBoxActive} iconSet={iconSet} currentIcon={this.state.currentIcon} closeIconBox={this.closeIconBox}/>
         </div>
       </Layout>
