@@ -11,15 +11,14 @@ class Layout extends React.Component {
         { children }
         <Footer />
         <style global jsx>{`
-        html {
-          font-size: 10px;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
         
         body {
           -webkit-font-smoothing: auto;
           margin: 0;
           padding: 0;
           color: rgba(0, 0, 0, 0.7);
+          
         }
       `}</style>
       </div>

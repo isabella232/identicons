@@ -14,7 +14,7 @@ const IconBox = (props) => {
         <p className="icon-size">400x400</p>
       </div>
       <div className="icon-download">
-        <p className="download-copy">DOWNLOAD</p>
+        <p className="download-copy">Download</p>
         <a href={icon ? baseImgURL + props.mode + '/' + icon.image + '.png' : ''} download>PNG</a>
         <a href={icon ? baseImgURL + props.mode + '/' + icon.image + '.svg' : ''} download>SVG</a>
       </div>
@@ -24,22 +24,20 @@ const IconBox = (props) => {
       <style jsx>{`
           .icon-box {
             display: flex;
+            color: #BDC4CF;
             position: fixed;
-            bottom: 25px;
+            bottom: 3rem;
             left: 50%;
-            padding: 10px;
-            background: white;
+            padding: 3rem 1.5rem;
+            background: #2A2E35;
             flex-direction: row;
             align-items: center;
-            background: white;
-            border-radius: 3px;
+            border-radius: 24px;
             height: 100px;
-            width: 95%; 
-            max-width: 966px;
+            width: 100%; 
+            max-width: 1200px;
             transform: translateX(-50%);
-            -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.4);
-            -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.4);
-            box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.4);
+            box-shadow: 0px 44.8625px 52.7794px rgba(0, 0, 0, 0.08), 0px 18.7425px 22.05px rgba(0, 0, 0, 0.0575083), 0px 10.0206px 11.789px rgba(0, 0, 0, 0.0476886), 0px 5.61748px 6.6088px rgba(0, 0, 0, 0.04), 0px 2.9834px 3.50988px rgba(0, 0, 0, 0.0323114), 0px -2px 12px rgba(0, 0, 0, 0.04);
             z-index: 11;
             opacity: 1;
             pointer-events: auto;
@@ -54,15 +52,8 @@ const IconBox = (props) => {
           }
 
           .icon-box .icon {
-            width: 80px;
+            width: 55px;
           }
-
-          .dark .icon-wrapper {
-            background: #333;
-            border-radius: 3px;
-            overflow: hidden;
-          }
-
           .icon-description {
             flex-grow: 2;
             line-height: 1.5;
@@ -71,13 +62,11 @@ const IconBox = (props) => {
           }
 
           .icon-name {
-            text-transform: uppercase;
             font-weight: 600;
             margin: 0 0 5px;
           }
 
           .icon-size {
-            opacity: 0.6;
             margin: 0;
           }
 
@@ -89,16 +78,16 @@ const IconBox = (props) => {
           .download-copy {
             display: inline-block;
             margin:0 25px 0 0;
-            opacity: 0.6;
-            font-size: 1.2rem;
+            font-size: 1rem;
           }
 
           .icon-download a {
             margin: 0 10px 0 0;
-            padding: 5px 10px;
-            background: rgb(244,244,244);
-            border-radius: 3px;
-            color: #4A4A4A;
+            padding: 8px 10px;
+            background: #BDC4CF;
+            border-radius: 8px;
+            color: #2A2E35;
+            font-weight: 500;
           }
 
           .icon-download a:last-child {
@@ -109,7 +98,8 @@ const IconBox = (props) => {
             cursor: pointer;
             align-self: flex-start;
             order: 4;
-            margin-top: -8px;
+            margin-top: -5px;
+            align-self: center;
           }
           
           @media(max-width: 600px) {

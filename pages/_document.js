@@ -41,8 +41,6 @@ export default class MyDocument extends Document {
           <link rel="mask-icon" href="./static/favicons/safari-pinned-tab.svg" color="#000000"></link>
           <link rel="stylesheet" href="https://cdn.auth0.com/styleguide/core/2.0.5/core.min.css" />
           <link rel="stylesheet" href="https://cdn.auth0.com/styleguide/components/2.0.0/components.min.css" />
-          <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
-          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
           <meta property="og:title" content="Identicons - Royalty-free, free Identity icons from Auth0"/>
           <meta property="og:site_name" content="Identicons.dev by Auth0"/>
           <meta property="og:url" content="https://identicons.dev/"/>

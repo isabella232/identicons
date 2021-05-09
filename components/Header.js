@@ -8,8 +8,7 @@ const Header = () => {
       <Container>
         <Link href="/index" >
           <div className="logo">
-            <img className="sc-footer__logo-image" src="../static/site/auth0-logo-black.svg" width="30"></img>
-            <span className="logo-copy"><strong>IDENTICONS</strong></span>
+            <img alt="Auth0 Identicons" src="../static/site/identicons-logo.svg" width="192" />
           </div>
         </Link>
         <HeaderNav />
@@ -17,10 +16,9 @@ const Header = () => {
 
       <style jsx>{`
         .header-page {
-          background: white;
+          background: #EAECEE;
           color: rgb(34, 34, 34);
           width: 100%;
-          padding: 20px 0;
         }
 
         .logo {

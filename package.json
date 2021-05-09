@@ -8,6 +8,7 @@
     "now-build": "next build"
   },
   "dependencies": {
+    "fuse.js": "^6.4.6",
     "next": "^8.1.1-canary.64",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

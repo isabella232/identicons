@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer-page">
       <Container>
         <div className="footer-logo">
-          <img className="identicons-logo" src="../static/site/identicons-logo.svg" width="100"></img>
+          <img className="identicons-logo" src="../static/site/identicons-logo-white.svg" width="130"></img>
           <span className="footer-copy"><strong>open source</strong></span>
           <Link href="http://auth0.com">
             <img className="auth0-logo" src="../static/site/auth0-white-logo.svg" width="60"></img>
@@ -17,11 +17,13 @@ const Footer = () => {
       
       <style jsx>{`
         .footer-page {
-          background: black;
+          background: #2A2E35;
           color: #fff;
           width: 100%;
-          height: 80px;
-          padding: 14px 0;
+        }
+
+        .footer-copy{
+          vertical-align: middle;
         }
 
         .identicons-logo {
