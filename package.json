@@ -9,12 +9,10 @@
   },
   "dependencies": {
     "fuse.js": "^6.4.6",
-    "next": "^8.1.1-canary.64",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-modal": "^3.8.1",
-    "react-slick": "^0.24.0",
-    "slick-carousel": "^1.8.1"
+    "next": "^10.2.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-modal": "^3.8.1"
   },
   "license": "ISC"
 }
