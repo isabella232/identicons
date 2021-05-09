@@ -28,7 +28,7 @@ const IconBox = (props) => {
             position: fixed;
             bottom: 3rem;
             left: 50%;
-            padding: 3rem 1.5rem;
+            padding: 1.5rem 2rem;
             background: #2A2E35;
             flex-direction: row;
             align-items: center;

@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from "../components/Hero";
 import IconSection from "../components/IconSection";
-import SamplesSection from "../components/SamplesSection";
 import IconBox from "../components/IconBox";
 import iconSet from '../base/iconSet';
 import Modal from '../components/Modal'
@@ -44,7 +43,6 @@ class Index extends React.Component {
     });
 
   }
-
 
   closeModal = () => {
     this.setState({ modalOpen: false });
