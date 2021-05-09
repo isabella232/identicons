@@ -6,43 +6,25 @@ const Hero = () => {
     <div className="hero">
       <Container>
         <h1 className="hero-title">A visual language for identity</h1>
-        <p className="hero-copy">Royalty-free, free-to-use icons and clipart representing fundamental identity concepts. Use them in presentations, specifications and documentation.<br /> For more details <a href="https://auth0.com/blog/introducing-auth0-identicons-identity-icons" target="_blank">read more</a>.</p>
-        <div className="call-to-action">
-          <a className="btn btn-transparent btn-lg" href="../static/icons/identicons-set.zip" download>
-            <img className="github" src="../static/site/download-icon.svg" width="12"></img>
-            Download Set
-          </a>
-          <a className="btn btn-transparent btn-lg" href="https://github.com/auth0/identicons" > 
-            <img className="github" src="../static/site/github-icon.svg" width="18"></img>
-             Contribute
-          </a>
-        </div>
+        <p className="hero-copy">Royalty-free, free-to-use icons and clipart representing fundamental identity concepts. Use them in presentations, specifications and documentation.</p>
       </Container>
      
       <style jsx>{`
+
         .hero {
           text-align: center;
-          background: rgb(244,244,244);
+          background: #EAECEE;
+          padding:2rem 0 2rem;
         }
         
         .hero-title {
-          padding-top: 4rem;
-          font-size: 4.8rem;
+          font-family: 'Space Grotesk', sans-serif;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+          letter-spacing: -0.03em;
+          line-height: 80px;
+          font-size: 4em;
           max-width: 75rem;
-          margin: 4rem auto;
-        }
-
-        .call-to-action {
-          margin: 0px auto  10rem;
-        }
-
-        .call-to-action a {
-          width: auto;
-        }
-
-        .call-to-action a:last-child {
-          margin-left: 25px;
-          margin-top: 0;
+          margin: 0 auto 2rem;
         }
 
         .github {
@@ -50,11 +32,12 @@ const Hero = () => {
         }
 
         .hero-copy {
-          font-size: 2rem;
-          font-weight: 300;
-          line-height: 1.8;
-          max-width: 67rem;
-          margin: 0px auto 4rem;
+          font-size: 1.5rem;
+          font-weight: 400;
+          font-style: normal;
+          line-height: 1.4;
+          max-width: 944px;
+          margin: 0px auto;
         }
 
         @media(max-width: 600px) {
@@ -83,3 +66,4 @@ const Hero = () => {
 } 
 
 export default Hero;
+

@@ -10,7 +10,7 @@ class Container extends React.Component {
 
         <style jsx>{`
           .container {
-            max-width: 1016px;
+            max-width: 1200px;
             width: auto;
             margin: 0 auto;
             padding: 1rem;

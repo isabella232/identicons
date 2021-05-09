@@ -12,14 +12,10 @@ const IconSection = (props) => {
 
       <style jsx>{`
           .icon-section {
-            background: white;
+            background: #EAECEE;
             padding: 6rem 0;
             border-bottom: 1px solid #ededed;
             transition: background .3s ease-in-out;
-          }
-
-          .icon-section.dark {
-            background: black;
           }
 
           @media(max-width: 600px) {
