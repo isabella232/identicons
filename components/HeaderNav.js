@@ -3,11 +3,8 @@ const HeaderNav = () => {
     <nav className="header-nav">
       <ul className="navigation">
         <li>
-          <a href="https://github.com/auth0/identicons" target="_blank">Usage</a>
-        </li>
-        <li>
           <a href="https://github.com/auth0/identicons" target="_blank">
-            <img className="github" src="../static/site/github-icon.svg" width="16" /> Contribute
+            <img className="github" src="../static/site/github-icon.svg" width="16" /> Usage & Contributions
           </a>
         </li>
 
@@ -39,6 +36,12 @@ const HeaderNav = () => {
 
           .navigation li a{
             color: black;
+          }
+          
+          .github {
+            margin-right: .4rem;
+            margin-bottom: 2px;
+            vertical-align: center;
           }
 
           .btn-sm {

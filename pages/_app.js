@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }) {
           <meta property="og:title" content="Identicons - Royalty-free, free Identity icons from Auth0"/>
           <meta property="og:site_name" content="Identicons.dev by Auth0"/>
           <meta property="og:url" content="https://identicons.dev/"/>
-          <meta property="og:image" content="https://cdn.auth0.com/website/assets/pages/identicons/img/twitter-card.png"/>
+          <meta property="og:image" content="https://cdn.auth0.com/website/identicons/images/identicons-twittercard.png"/>
           <meta property="og:description" content="Get royalty-free identity icons. A visual language for identity - open source project from Auth0’s Guillermo Mesyngier and Vittorio Bertocci. For use in presentations, specifications and documentation."/>
           <meta property="og:type" content="website"/>
           <meta name="twitter:site" content="@auth0"/>
@@ -48,7 +48,7 @@ function MyApp({ Component, pageProps }) {
           <meta name="twitter:url" content="https://identicons.dev/"/>
           <meta name="twitter:description" content="Get royalty-free identity icons. A visual language for identity - open source project from Auth0’s Guillermo Mesyngier and Vittorio Bertocci. For use in presentations, specifications and documentation."/>
           <meta name="twitter:card" content="summary_large_image"/>
-          <meta name="twitter:image" content="https://cdn.auth0.com/website/assets/pages/identicons/img/twitter-card.png"/>
+          <meta name="twitter:image" content="https://cdn.auth0.com/website/identicons/images/identicons-twittercard.png"/>
           <meta name="twitter:image:height" content="512"/>
           <meta name="twitter:image:width" content="1024"/>
           <script
