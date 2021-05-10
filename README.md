@@ -16,14 +16,14 @@ You can download the whole set of icons or just the icons that you need from the
 
 Awesome! To contribute you have to make a pull request with the following data:
 
-1. Add an icon in two versions, dark and light. In turn, have an SVG and PNG for each version, using the `.svg` and `.png` extensions respectively. Each version of the icon has to be in its own corresponding folder: `./static/icons/dark` or `./static/icons/light`. When building the icons, you must consider the following specifications:
+1. Add an icon in two versions, monochrome and greyscale. In turn, have an SVG and PNG for each version, using the `.svg` and `.png` extensions respectively. Each version of the icon has to be in its own corresponding folder: `./static/icons/mono` or `./static/icons/grey`. When building the icons, you must consider the following specifications:
 
 - Icon colors.
   - You can use two colors per icon for each version.
-    - Light: `#000000` and `#eb5424`.
-    - Dark: `#ffffff` and `#eb5424`.
+    - Monochrome: `#D0CEFF`, `A5A0FF` and `#635DFF`.
+    - Greyscale: `#C4C4C4`, `9B9D9F` and `#65676E`.
 - All icons must have a transparent background.
-- The `.png` icons size has to be `400x400` pixels.
+- The `.png` icons size has to be `816x816` pixels.
 - **The filename must be the same for all versions**.
 
 2. Once you add the icons, create a new key in the `./base/iconSet.js` file. The key looks like this:

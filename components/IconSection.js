@@ -41,7 +41,7 @@ const IconSection = ({mode, icons, setMode, setCurrentIcon}) => {
         <style jsx>{`
             .icon-section {
               background: #EAECEE;
-              padding: 6rem 0;
+              padding: 4rem 0;
               border-bottom: 1px solid #ededed;
               transition: background .3s ease-in-out;
             }
