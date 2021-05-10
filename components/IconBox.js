@@ -7,16 +7,16 @@ const IconBox = ({iconBoxActive ,currentIcon , mode, closeIconBox}) => {
   return (
     <div className={"icon-box " + (iconBoxActive ? mode : "silence " + mode)}>
       <div className="icon-wrapper">
-        <img className="icon" src={icon.image ? baseImgURL + mode + '/' + icon.image + '.svg' : ''} alt={icon ? icon.name:''}/>
+        <img className="icon" src={icon.image ? baseImgURL + mode + '/svg/' + icon.image + '.svg' : ''} alt={icon ? icon.name:''}/>
       </div>
       <div className="icon-description">
         <p className="icon-name">{icon ? icon.name : ""}</p>
-        <p className="icon-size">400x400</p>
+        <p className="icon-size">816 x 816</p>
       </div>
       <div className="icon-download">
         <p className="download-copy">Download</p>
-        <a href={icon ? baseImgURL + mode + '/' + icon.image + '.png' : ''} download>PNG</a>
-        <a href={icon ? baseImgURL + mode + '/' + icon.image + '.svg' : ''} download>SVG</a>
+        <a href={icon ? baseImgURL + mode + '/png/' + icon.image + '.png' : ''} download>PNG</a>
+        <a href={icon ? baseImgURL + mode + '/svg/' + icon.image + '.svg' : ''} download>SVG</a>
       </div>
       <div className="close-box" onClick={() => closeIconBox()}>
         <img src="../static/site/icon-close.svg" alt="Close" width="12"/>

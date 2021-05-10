@@ -12,7 +12,7 @@ const HeaderNav = () => {
         </li>
 
         <li>
-          <a className="btn btn-transparent btn-sm" href="../static/icons/identicons-set.zip" download>
+          <a className="btn btn-transparent btn-sm" href="../static/icons/identicons-set-v1.zip" download>
             Old Version
           </a>
         </li>
@@ -20,6 +20,7 @@ const HeaderNav = () => {
       <style jsx>{`
           .header-nav {
             float: right;
+            display: block;
           }
 
           .navigation {
@@ -45,6 +46,13 @@ const HeaderNav = () => {
             text-transform: capitalize;
             font-weight: 400;
           }
+
+          @media(max-width: 600px) {
+            .header-nav {
+              display: none;
+            }
+          }
+
         `}
       </style>
     </nav>

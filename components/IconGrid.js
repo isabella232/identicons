@@ -15,7 +15,7 @@ class IconGrid extends Component {
         
         {icons.map((icon, index) => 
           <li key={index} className={'item-'+ index +' icon-container ' + mode} onClick={() => this.props.setCurrentIcon(icon)}>
-          <img className="icon" src={ baseImgURL + mode + "/" + icon.image + ".svg" } alt={icon.name} ></img>
+          <img className="icon" src={ baseImgURL + mode + "/svg/" + icon.image + ".svg" } alt={icon.name} ></img>
           <p className={"icon-description " + mode}>{icon.name}</p>
         </li>
         )}

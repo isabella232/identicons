@@ -14,7 +14,7 @@ const Hero = () => {
         .hero {
           text-align: center;
           background: #EAECEE;
-          padding:2rem 0 2rem;
+          padding: 3rem 0 2rem;
         }
         
         .hero-title {
@@ -24,7 +24,7 @@ const Hero = () => {
           line-height: 80px;
           font-size: 4em;
           max-width: 75rem;
-          margin: 0 auto 2rem;
+          margin: 0 auto 1.5rem;
         }
 
         .github {
@@ -43,20 +43,9 @@ const Hero = () => {
         @media(max-width: 600px) {
         
           .hero-title { 
-            margin: 2rem auto 4rem;
-          }
-
-          .call-to-action {
-            margin: 0px auto  7rem;
-          }
-
-          .call-to-action a:last-child {
-            margin-left: 0;
-            margin-top: 25px;
-          }
-
-          .call-to-action a {
-            width: 100%;
+            margin: 0 auto 2rem;
+            font-size: 3em;
+            line-height: 50px;
           }
         }
       `}

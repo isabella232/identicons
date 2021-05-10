@@ -59,6 +59,18 @@ class IconsNav extends Component {
             color: white;
             background: #2A2E35;
           }
+
+          @media(max-width: 600px) {
+
+            .icon-filter {
+              width: 100%;
+            }
+
+            .icon-nav > * {
+              margin: 1rem 0;
+            }
+          }
+
         `}</style>
       </div>
     );

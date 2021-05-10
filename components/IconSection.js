@@ -48,7 +48,7 @@ const IconSection = ({mode, icons, setMode, setCurrentIcon}) => {
 
             @media(max-width: 600px) {
               .icon-section {
-                padding: 6rem 0 3rem;
+                padding: 2rem 0 3rem;
               }
             }
           `}
