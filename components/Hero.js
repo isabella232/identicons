@@ -36,7 +36,7 @@ const Hero = () => {
           font-weight: 400;
           font-style: normal;
           line-height: 1.4;
-          max-width: 944px;
+          max-width: 885px;
           margin: 0px auto;
         }
 

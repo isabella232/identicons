@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from "../components/Hero";
 import IconSection from "../components/IconSection";
 import IconBox from "../components/IconBox";
-import iconSet from '../base/iconSet';
+import iconSet from '../base/iconSet.json';
 import Modal from '../components/Modal'
 import Layout from '../components/Layout'
 
@@ -56,6 +56,13 @@ class Index extends React.Component {
           <Hero />
           <IconSection setMode={this.setMode} mode={this.state.mode} icons={iconSet} setCurrentIcon={this.setCurrentIcon}/>
           <IconBox mode={this.state.mode} iconBoxActive={this.state.iconBoxActive} iconSet={iconSet} currentIcon={this.state.currentIcon} closeIconBox={this.closeIconBox}/>
+        <style jsx>{`
+          .main-page {
+            min-height: calc(100vh - 124px);
+            background: #EAECEE;
+          }
+        `}
+        </style>
         </div>
       </Layout>
     )

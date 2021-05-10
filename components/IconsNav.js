@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SearchBar from './SearchBar';
 
 class IconsNav extends Component {
   render() {
@@ -6,24 +7,48 @@ class IconsNav extends Component {
 
     return (
       <div className="icon-nav">
+        <SearchBar placeholder="Search Identicons" onChange={(e) => this.props.searchData(e.target.value)} />
+        
         <ul className={"icon-filter " + mode}>
           <li className={"filter" + (mode==="mono" ? " selected" : "") } onClick={() => this.props.setMode("mono")}>Monochrome</li>
           <li className={"filter" + (mode==="gray" ? " selected" : "") } onClick={() => this.props.setMode("gray")}>Grayscale</li>
         </ul>
+
         <style jsx>{`
 
           .icon-nav {
-            text-align: center;
-            padding-right: 20px;
-            margin-bottom: 4rem;
+            max-width: 1016px;
+            margin: 0 auto 2rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+          }
+
+          .icon-nav > * {
+            margin: 0 10px; 
+          } 
+
+          .icon-filter {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            border-radius: 30px;
+            background: white;
+            padding: 5px;
+            margin: 0;
           }
 
           .filter {
-            display: inline-block;
-            text-transform: uppercase;
             cursor: pointer;
-            font-weight: 600;
-            color: black;
+            font-weight: 400;
+            font-size: 18px;
+            color: #898C8F;
+            padding: 5px 25px;
+            transition: background .3s ease-in-out;
+            border-radius: 24px;
+            
           }
 
           .filter:last-child {
@@ -31,17 +56,9 @@ class IconsNav extends Component {
           }
 
           .filter.selected {
-            border-bottom: 2px solid black;
-          }
-
-          .dark .filter.selected {
-            border-bottom: 2px solid white;
-          }
-
-          .dark .filter {
             color: white;
+            background: #2A2E35;
           }
-
         `}</style>
       </div>
     );
