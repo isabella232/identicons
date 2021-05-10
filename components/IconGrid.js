@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 class IconGrid extends Component {
 
-  handleClick = key => {
-    this.props.setCurrentIcon(key);
+  handleClick = icon => {
+    this.props.setCurrentIcon(icon);
   }
 
   render() {
@@ -13,11 +13,11 @@ class IconGrid extends Component {
     return (
       <ul className={"icon-grid"}>
         
-        {Object.keys(icons).map((key, index) => 
-          <li key={key} className={'item-'+ index +' icon-container ' + mode} onClick={() => this.props.setCurrentIcon(key)}>
-            <img className="icon" src={ baseImgURL + mode + "/" + icons[key].image + ".svg" } alt={icons[key].name} ></img>
-            <p className={"icon-description " + mode}>{icons[key].name}</p>
-          </li>
+        {icons.map((icon, index) => 
+          <li key={index} className={'item-'+ index +' icon-container ' + mode} onClick={() => this.props.setCurrentIcon(icon)}>
+          <img className="icon" src={ baseImgURL + mode + "/" + icon.image + ".svg" } alt={icon.name} ></img>
+          <p className={"icon-description " + mode}>{icon.name}</p>
+        </li>
         )}
         
         <style jsx>{`

@@ -13,7 +13,7 @@ const HeaderNav = () => {
 
         <li>
           <a className="btn btn-transparent btn-sm" href="../static/icons/identicons-set.zip" download>
-            Get The Old Version
+            Old Version
           </a>
         </li>
       </ul>
@@ -41,6 +41,7 @@ const HeaderNav = () => {
           }
 
           .btn-sm {
+            font-family: fakt-web, Helvetica Neue,Hevetica,sans-serif;
             text-transform: capitalize;
             font-weight: 400;
           }

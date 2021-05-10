@@ -1,13 +1,13 @@
 import React from 'react';
 
-const IconBox = (props) => {
-  const icon = props.iconSet[props.currentIcon];
+const IconBox = ({iconBoxActive ,currentIcon , mode, closeIconBox}) => {
+  const icon = currentIcon;
   const baseImgURL = '../static/icons/';
 
   return (
-    <div className={"icon-box " + (props.iconBoxActive ? props.mode : "silence " + props.mode)}>
+    <div className={"icon-box " + (iconBoxActive ? mode : "silence " + mode)}>
       <div className="icon-wrapper">
-        <img className="icon" src={icon ? baseImgURL + props.mode + '/' + icon.image + '.svg' : ''} alt={icon ? icon.name:''}/>
+        <img className="icon" src={icon.image ? baseImgURL + mode + '/' + icon.image + '.svg' : ''} alt={icon ? icon.name:''}/>
       </div>
       <div className="icon-description">
         <p className="icon-name">{icon ? icon.name : ""}</p>
@@ -15,10 +15,10 @@ const IconBox = (props) => {
       </div>
       <div className="icon-download">
         <p className="download-copy">Download</p>
-        <a href={icon ? baseImgURL + props.mode + '/' + icon.image + '.png' : ''} download>PNG</a>
-        <a href={icon ? baseImgURL + props.mode + '/' + icon.image + '.svg' : ''} download>SVG</a>
+        <a href={icon ? baseImgURL + mode + '/' + icon.image + '.png' : ''} download>PNG</a>
+        <a href={icon ? baseImgURL + mode + '/' + icon.image + '.svg' : ''} download>SVG</a>
       </div>
-      <div className="close-box" onClick={() => props.closeIconBox()}>
+      <div className="close-box" onClick={() => closeIconBox()}>
         <img src="../static/site/icon-close.svg" alt="Close" width="12"/>
       </div>
       <style jsx>{`

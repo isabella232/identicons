@@ -1,0 +1,194 @@
+[
+  {
+    "image": "icon-actions",
+    "name": "Actions"
+  },
+  {
+    "image":"icon-integrations-marketplace",
+    "name": "Integrations Marketplace"
+  },
+  {
+    "image": "icon-users",
+    "name": "Users"
+  },
+  {
+    "image":"icon-teams",
+    "name": "Teams"
+  },
+  {
+    "image": "icon-user-management",
+    "name": "User Management"
+  },
+  {
+    "image": "icon-user",
+    "name": "User"
+  },
+  {
+    "image": "icon-enterprise-directory",
+    "name": "Enterprise Directory"
+  },
+  {
+    "image": "icon-social-providers",
+    "name": "Social Providers"
+  },
+  {
+    "image": "icon-authentication-a",
+    "name": "Authentication A"
+  },
+  {
+    "image": "icon-authentication-b",
+    "name": "Authentication B"
+  },
+  {
+    "image": "icon-security",
+    "name": "Security"
+  },
+  {
+    "image": "icon-applications",
+    "name": "Applications"
+  },
+  {
+    "image": "icon-extensions",
+    "name": "Extensions"
+  },
+  {
+    "image": "icon-branding",
+    "name": "Branding"
+  },
+  {
+    "image": "icon-getting-started",
+    "name": "Getting Started"
+  },
+  {
+    "image": "icon-pipeline-a",
+    "name": "Pipeline A"
+  },
+  {
+    "image": "icon-pipeline-b",
+    "name": "Pipeline B"
+  },
+  {
+    "image": "icon-monitoring",
+    "name": "Monitoring"
+  },
+  {
+    "image": "icon-sdk",
+    "name": "SDK"
+  },
+  {
+    "image": "icon-cli-script",
+    "name": "CLI Script"
+  },
+  {
+    "image": "icon-credential-user",
+    "name": "Credential User"
+  },
+  {
+    "image": "icon-credential-application",
+    "name": "Credential Application"
+  },
+  {
+    "image": "icon-activity",
+    "name": "Activity"
+  },
+  {
+    "image": "icon-settings",
+    "name": "Settings"
+  },
+  {
+    "image": "icon-video",
+    "name": "Video"
+  },
+  {
+    "image": "icon-auth0-dashboard",
+    "name": "Auth0 Dashboard"
+  },
+  {
+    "image": "icon-browser",
+    "name": "Browser"
+  },
+  {
+    "image": "icon-desktop-app",
+    "name": "Desktop App"
+  },
+  {
+    "image": "icon-mobile-app",
+    "name": "Mobile App"
+  },
+  {
+    "image": "icon-web-app",
+    "name": "Web App"
+  },
+  {
+    "image": "icon-spa",
+    "name": "SPA"
+  },
+  {
+    "image": "icon-backend",
+    "name": "Backend"
+  },
+  {
+    "image": "icon-id-token",
+    "name": "ID Token"
+  },
+  {
+    "image": "icon-access-token",
+    "name": "Access Token"
+  },
+  {
+    "image": "icon-refresh-token",
+    "name": "Refresh Token"
+  },
+  {
+    "image": "icon-certificate",
+    "name": "Certificate"
+  },
+  {
+    "image": "icon-attributes",
+    "name": "Attributes"
+  },
+  {
+    "image": "icon-cookies",
+    "name": "Cookies"
+  },
+  {
+    "image": "icon-auth0-logo-light",
+    "name": "Auth0 Logo Light"
+  },
+  {
+    "image": "icon-auth0-logo-dark",
+    "name": "Auth0 Logo Dark"
+  },
+  {
+    "image": "icon-database",
+    "name": "Database"
+  },
+  {
+    "image": "icon-boundary-protocol",
+    "name": "Boundary Protocol"
+  },
+  {
+    "image": "icon-server",
+    "name": "Server"
+  },
+  {
+    "image": "icon-authorization-server",
+    "name": "Authorization Server"
+  },
+  {
+    "image": "icon-auth0-authorization-server",
+    "name": "Auth0 Authorization Server"
+  },
+  {
+    "image": "icon-cloud",
+    "name": "Cloud"
+  },
+  {
+    "image": "icon-api",
+    "name": "API"
+  },
+  {
+    "image": "icon-api-related",
+    "name": "API Related"
+  }
+]
