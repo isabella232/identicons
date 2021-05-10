@@ -8,7 +8,7 @@ const Hero = () => {
         <h1 className="hero-title">A visual language for identity</h1>
         <p className="hero-copy">Royalty-free, free-to-use icons and clipart representing fundamental identity concepts. Use them in presentations, specifications and documentation.</p>
         <div className="call-to-action">
-          <a className="btn-dl btn-lg" href="../static/icons/identicons-set-v2.zip" download>Get The Last Version</a>
+          <a className="btn-dl btn-lg" href="../static/icons/identicons-set-v2.zip" download>Get the latest version</a>
         </div>
       </Container>
      
