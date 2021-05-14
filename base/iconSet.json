@@ -190,5 +190,9 @@
   {
     "image": "icon-api-related",
     "name": "API Related"
+  },
+  {
+    "image": "icon-organizations",
+    "name": "Organizations"
   }
 ]
