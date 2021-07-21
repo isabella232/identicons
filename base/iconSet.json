@@ -194,5 +194,13 @@
   {
     "image": "icon-organizations",
     "name": "Organizations"
+  },
+  {
+    "image": "icon-help",
+    "name": "Help"
+  },
+  {
+    "image": "icon-customization",
+    "name": "Customization"
   }
 ]
