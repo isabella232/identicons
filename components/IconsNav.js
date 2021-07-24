@@ -38,6 +38,7 @@ class IconsNav extends Component {
             background: white;
             padding: 5px;
             margin: 0;
+            justify-content: left;
           }
 
           .filter {
@@ -60,14 +61,22 @@ class IconsNav extends Component {
             background: #2A2E35;
           }
 
-          @media(max-width: 600px) {
+          @media(max-width: 765px) {
 
             .icon-filter {
               width: 100%;
+              justify-content: center;
             }
 
             .icon-nav > * {
               margin: 1rem 0;
+            }
+          }
+
+
+          @media(max-width: 550px) {
+            .icon-filter {
+              justify-content: space-between;
             }
           }
 
