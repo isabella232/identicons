@@ -202,5 +202,97 @@
   {
     "image": "icon-customization",
     "name": "Customization"
+  },
+
+
+
+
+  {
+    "image": "icon-account-takeover",
+    "name": "Account Takeover"
+  },
+  {
+    "image": "icon-advanced-options",
+    "name": "Advanced Options"
+  },
+  {
+    "image": "icon-biometrics",
+    "name": "Biometrics"
+  },
+  {
+    "image": "icon-bot-detection",
+    "name": "Bot Detection"
+  },
+  {
+    "image": "icon-breached-password",
+    "name": "Breached Password"
+  },
+  {
+    "image": "icon-brute-force",
+    "name": "Brute Force"
+  },
+  {
+    "image": "icon-credential-stuffing",
+    "name": "Credential Stuffing"
+  },
+  {
+    "image": "icon-device-biometrics",
+    "name": "Device Biometrics"
+  },
+  {
+    "image": "icon-guardian-push-notification",
+    "name": "Guardian Push Notification"
+  },
+  {
+    "image": "icon-identifier-first",
+    "name": "Identifier First"
+  },
+  {
+    "image": "icon-identifier-password",
+    "name": "Identifier Password"
+  },
+  {
+    "image": "icon-ip-throttling",
+    "name": "IP Throttling"
+  },
+  {
+    "image": "icon-login-customization",
+    "name": "Login Customization"
+  },
+  {
+    "image": "icon-login",
+    "name": "login"
+  },
+  {
+    "image": "icon-mail-message-a",
+    "name": "Mail Message A"
+  },
+  {
+    "image": "icon-mail-message-b",
+    "name": "Mail Message B"
+  },
+  {
+    "image": "icon-multiple-failed-logins",
+    "name": "Multiple Failed Logins"
+  },
+  {
+    "image": "icon-one-time-password",
+    "name": "One Time Password"
+  },
+  {
+    "image": "icon-phone-message-a",
+    "name": "Phone Message A"
+  },
+  {
+    "image": "icon-phone-message-b",
+    "name": "Phone Message B"
+  },
+  {
+    "image": "icon-tenant",
+    "name": "Tenant"
+  },
+  {
+    "image": "icon-webauthn",
+    "name": "Webauthn"
   }
 ]
