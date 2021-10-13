@@ -15,8 +15,6 @@ class IconGrid extends Component {
     const mode = this.props.mode;
     const baseImgURL = '../static/icons/';
 
-    console.log(icons);
-
     return (
       <ul className={"icon-grid"}>
         
