@@ -7,9 +7,16 @@ class IconGrid extends Component {
   }
 
   render() {
-    const icons = this.props.icons;
+    const icons = this.props.icons.sort(function(a, b) {
+      if(a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+      if(a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+      return 0;
+     });
     const mode = this.props.mode;
     const baseImgURL = '../static/icons/';
+
+    console.log(icons);
+
     return (
       <ul className={"icon-grid"}>
         
