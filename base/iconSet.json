@@ -294,5 +294,41 @@
   {
     "image": "icon-webauthn",
     "name": "Webauthn"
+  },
+  {
+    "image": "icon-anticipation",
+    "name": "Anticipation"
+  },
+  {
+    "image": "icon-consistency",
+    "name": "Consistency"
+  },
+  {
+    "image": "icon-dashboard",
+    "name": "Dashboard"
+  },
+  {
+    "image": "icon-efficiency",
+    "name": "Efficiency"
+  },
+  {
+    "image": "icon-empathy",
+    "name": "Empathy"
+  },
+  {
+    "image": "icon-fine-grained-authorization",
+    "name": "Fine Grained Authorization"
+  },
+  {
+    "image": "icon-logs",
+    "name": "Logs"
+  },
+  {
+    "image": "icon-multifactor",
+    "name": "Multifactor"
+  },
+  {
+    "image": "icon-user-database",
+    "name": "User Database"
   }
 ]
